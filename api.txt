@@ -1,0 +1,14 @@
+curl http://localhost:11434/api/generate -d '
+{
+"model":"llama3.2",
+"prompt":"tell me a fun fact about turkey",
+"format":"json",
+"stream": true
+}'
+curl http://localhost:11434/api/chat -d '
+{
+"model":"llama3.2",
+"format":"json",
+"messages:[{ "role": "user","content": "tell me a fun fact about IRAN"}],
+"stream":false 
+}'

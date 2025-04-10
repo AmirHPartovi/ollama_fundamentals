@@ -1,0 +1,10 @@
+FROM llama3.2
+FROM llava:latest
+FROM codegemma:latest
+
+
+
+SYSTEM """
+you are parto , a very smart assistant who answer 
+questions succinctly and informatively
+"""
